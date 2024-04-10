@@ -1,0 +1,121 @@
+body {
+    background-color: #FFFBEC;
+    font-family: Times New Roman, serif;
+    margin: 0;
+    padding: 0;
+    color:#05270C;
+}
+.topnav {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+margin-right: 10px;
+overflow: hidden;
+background-color: #03441b;
+}
+
+.topnav a {
+float: left;
+display: initial;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 14px;
+text-decoration: none;
+}
+
+.topnav a:hover {
+background-color: #02270f;
+color: #f2f2f2;
+}
+
+#contact-modal {
+    display: none;
+    border: 2px solid #03441b;
+    padding: 10px;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#contact-modal button {
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.prom-img {
+    width: 700px;
+    height: 400px;
+    padding: 0px;
+    box-shadow:  0px 0px 0px 10px #03441b;
+    margin-bottom: 0px;
+}
+
+.clinic-img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.table-style {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-style th, .table-style td {
+    border: 1px solid #03441b;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-style th {
+    background-color: #99af86;
+}
+
+.list-style {
+    display: initial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 18px;
+    z-index: 1; 
+}
+
+footer {
+    background-color: #03441b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

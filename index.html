@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Моя Поліклініка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu -->
+    <div class="topnav">
+        <a href="#">Головна</a>
+        <a href="#">Послуги</a>
+        <a href="#">Лікарі</a>
+        <a href="#" onclick="openContactModal()">Про нас</a>
+        <a href="#">Записатись</a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal">
+        <p>Номер телефона: +380994172840</p>
+        <p>Email: podilclinic2@gmail.com</p>
+        <p>Адрес: Київ, вул. Фінансова, 9</p>
+        <button onclick="closeContactModal()">Закрити</button>
+    </div>
+
+    <!-- Clinic information -->
+    <p class="bold" style="font-size: 3.5em;">Поліклініка №2</p>
+    <p style="font-size: 2em;">Подільського району міста Києва</p>
+    <i>Запрошуємо містян зробити свій вклад в порятунок життя людей, які потребують компонентів донорської крові та долучитись до донорського руху.</i>
+    <p class="bold" style="font-size: 2.5em; text-align: center;">Cервіси</p>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="IMG_1449.jpg" alt="Photo 1">
+            <div class="description">Кардіологічне відділення </div>
+        </div>
+        <div class="grid-item">
+            <img src="Dentist.jpg" alt="Photo 2">
+            <div class="description">Стоматологічне відділення </div>
+        </div>
+        <div class="grid-item">
+            <img src="Care.jpg" alt="Photo 3" style="height: 250px;">
+            <div class="description">Травматологічне віддділення</div>
+        </div>
+        <div class="grid-item">
+            <img src="Ginecologist.jpg" alt="Photo 4">
+            <div class="description">Гінекологічне відділення</div>
+        </div>
+        <div class="grid-item">
+            <img src="Operation.jpg" alt="Photo 5">
+            <div class="description">Хірургічне відділення</div>
+        </div>
+        <div class="grid-item">
+            <img src="dermatolog.jpg" alt="Photo 6">
+            <div class="description">Дерматологічне відділення</div>
+        </div>
+        <div class="grid-item">
+            <img src="Pediatr.jpg" alt="Photo 7">
+            <div class="description">Педіатричне відділення</div>
+        </div>
+        <div class="grid-item">
+            <img src="large.jpg" alt="Photo 8">
+            <div class="description">Психотерапевтичне відділення </div>
+        </div>
+        <div class="grid-item">
+            <img src="Careful.jpg" alt="Photo 9">
+            <div class="description">Педіатричне відділення</div>
+        </div>
+    </div>
+
+    <!-- Number of doctors -->
+    <p class="bold" style="font-size: 2em; margin-top: 60px;">Скільки лікарів залучено для консультації пацієнтів?</p>
+    <p style="font-weight: bold; font-size: 1.5em; margin-bottom: 5px;" id="doctors">100+</p>
+    <p>Професіоналів кожен день здійснюють профілактику потенційних захворювань та надають амбулаторні послуги нашим пацієнтам. Так, ми за останній місяць змогли проконсультувати більше 10 тисяч людей за січень цього року.</p>
+
+    <!-- Clinic services -->
+    <p class="bold" style="font-size: 2em; margin-top: 60px;">Основні послуги нашої клініки</p>
+    <table class="table-style">
+        <tr>
+            <th>Послуга</th>
+            <th>Підрозділ</th>
+            <th>Лікар</th>
+            <th>Ціна</th>
+        </tr>
+        <tr>
+            <td>Консультування</td>
+            <td>Хірургія</td>
+            <td>Бебех Ю. M.</td>
+            <td>550 ₴</td>
+        </tr>
+        <tr>
+            <td>Огляд</td>
+            <td>Стоматологія</td>
+            <td>Дадика Д. О.</td>
+            <td>400 ₴</td>
+        </tr>
+        <tr>
+            <td>УЗД</td>
+            <td>Кардіологія</td>
+            <td>Ламар Л. д.</td>
+            <td>600 ₴</td>        
+        </tr>
+        <tr>
+            <td>Дерматоскопія</td>
+            <td>Дерматологія</td>
+            <td>Завадський А. Й.</td>
+            <td>300 ₴</td>
+        </tr>
+        <tr>
+            <td>Постановка ВМС</td>
+            <td>Гінекологія</td>
+            <td>Олійник А. В.</td>
+            <td>800 ₴</td>
+        </tr>
+    </table>
+
+    <p class="bold" style="font-size: 2em; margin-top: 60px;">Акції дня</p>
+<div class="grid-container">
+    <div class="prom-img">
+        <img src="unGNgO0B31voZsNWW10UTLebtf7ZG3xA0sjlZ0Sw_1200.jpg" alt="Rectangle Photo" class="prom-img">
+    </div>
+    <ul class="list-style">
+        <li>Консультація судинного хірурга + УЗД (у період з 15.10.23 по 31.10.23 включно) - 890 ₴</li>
+        <li>Консультація психотерапевта (у період з 01.10.23 по 31.10.23 включно) - 700 ₴</li>
+        <li>Консультація дерматолога + аналізи (у період з 01.10.23 по 11.11.23 включно) - 1000 ₴</li>
+    </ul>
+</div>
+
+    <footer>
+        © 2024 Моя Поліклініка
+    </footer>
+
+    <script>
+        // Функція для отримання модального вікна за його ID
+        function getModalById(modalId) {
+            return document.getElementById(modalId);
+        }
+
+        function openContactModal() {
+            const modal = getModalById("contact-modal");
+            modal.style.display = "block";
+        }
+
+        function closeContactModal() {
+            const modal = getModalById("contact-modal");
+            modal.style.display = "none";
+        }
+
+        const paragraphs = document.querySelectorAll(".menu-item");
+        const doctorsParagraph = document.getElementById("doctors");
+
+        paragraphs.forEach(function(paragraph) {
+            console.log(paragraph.textContent);
+        });
+
+        console.log(doctorsParagraph.textContent);
+    </script>
+</body>
+</html>
