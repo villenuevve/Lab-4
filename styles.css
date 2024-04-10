@@ -1,30 +1,32 @@
+/* Base styles */
 body {
     background-color: #FFFBEC;
     font-family: Times New Roman, serif;
     margin: 0;
     padding: 0;
-    color:#05270C;
+    color: #05270C;
 }
+
 .topnav {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
-margin-right: 10px;
-overflow: hidden;
-background-color: #03441b;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #03441b;
 }
 
 .topnav a {
-float: left;
-display: initial;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 14px;
-text-decoration: none;
+    float: left;
+    display: initial;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
 }
 
 .topnav a:hover {
-background-color: #02270f;
-color: #f2f2f2;
+    background-color: #02270f;
+    color: #f2f2f2;
 }
 
 #contact-modal {
@@ -51,7 +53,7 @@ color: #f2f2f2;
     width: 700px;
     height: 400px;
     padding: 0px;
-    box-shadow:  0px 0px 0px 10px #03441b;
+    box-shadow: 0px 0px 0px 10px #03441b;
     margin-bottom: 0px;
 }
 
@@ -66,7 +68,8 @@ color: #f2f2f2;
     width: 100%;
 }
 
-.table-style th, .table-style td {
+.table-style th,
+.table-style td {
     border: 1px solid #03441b;
     padding: 8px;
     text-align: left;
@@ -110,7 +113,7 @@ color: #f2f2f2;
     color: rgb(0, 0, 0);
     padding: 5px;
     font-size: 18px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 footer {
@@ -118,4 +121,38 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* Media Queries for Tablet and Phone Sizes */
+@media only screen and (max-width: 768px) {
+    .topnav {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .clinic-img {
+        width: 50%;
+    }
+
+    .prom-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .topnav {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+
+    .clinic-img {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
